@@ -1,0 +1,307 @@
+:root{
+    --black:#232323;
+    --bright-blue:#0067b3;
+    --white:#ffffff;
+--grey: #5183B826;
+}
+
+.Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SubHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    width: 80%;
+  }
+
+
+.iitrlogo{
+    width: 100%;
+    max-width: 20rem;
+    cursor: pointer;
+
+  }
+
+.g20logo{
+    width: 100px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1rem;
+
+  }
+
+  .mainmenu{
+display: flex;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: .875rem;
+line-height: 1.0625rem;
+letter-spacing: 0.02em;
+width: 80%;
+justify-content: space-between;
+}
+
+.menupart{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.menupart > img{
+  position: relative;
+}
+.text{
+  padding: 5px;
+}
+
+.menupart:hover{
+  font-weight: 600;
+  background-color: var(--grey);
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.text-wrapper{
+  display: flex  ;
+  align-items: center;
+}
+.text-wrapper>img{
+ height: 5px;
+}
+
+.d{
+  display: none;
+  margin-left: 10px;
+  flex-direction: column;
+  padding-left: 0px;
+  min-width: 0.9rem;
+  flex-direction: row;
+}
+
+.menupart:hover .d{
+  display: block;
+  flex-direction: column;
+}
+ 
+
+
+.g20logo > img {
+    width: 100px;
+}
+
+.iitrlogo > img {
+    width: 350px
+}
+
+.upperpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: baseline;
+    gap: 1.75rem;
+}
+
+.rightpart{
+  display: flex;
+  flex-direction: column;
+justify-content: space-evenly;
+}
+
+.upperpart1{
+  cursor: pointer;
+}
+
+.upperpart2{
+  cursor: pointer;
+  display: flex;
+}
+
+.button1{
+color: var(--black);
+width: 20px;
+height: 20px;
+border-radius: 2px;
+font-family: var(--font-lato);
+font-size: 1rem;
+text-align: center;
+line-height: 20px;
+border: 2px solid var(--bright-blue);
+cursor: pointer;
+}
+
+.button2{
+color: var(--white);
+width: 20px;
+border-radius: 2px;
+font-family: var(--font-lato);
+font-size: 1rem;
+line-height: 20px;
+text-align: center;
+background-color: var(--bright-blue);
+border: 2px solid var(--bright-blue);
+cursor: pointer; 
+}
+
+.hamburger-item-wrapper{
+  display: none;
+}
+
+.upperpart3{
+  cursor: pointer;
+  display: flex;
+}
+
+.lowerpart{
+  display: flex;
+  font-size: medium;
+  gap: 1.75rem;
+}
+
+.line{
+width: 100%;
+position: relative;
+bottom: 5px;
+color: black;
+}
+
+.part{
+cursor: pointer;
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: .75rem;
+line-height: .875rem;
+letter-spacing: 0.02em;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.search{
+  cursor: pointer;
+  padding: 20px;
+}
+.hamburger-wrapper{
+  display:none;
+}
+
+.menupart:hover .d{
+  display: flex;
+}
+
+.mm1{
+  display: block;
+}
+.adresss-link {
+  display: flex;
+  gap: 5%;
+}
+
+@media (max-width:1600px) {
+  .mainmenu{
+    font-size: .675rem;
+  }
+}
+
+@media (max-width:1350px) {
+  .mainmenu{
+    font-size: .5rem;
+  }
+}
+
+@media (max-width:1024px) {
+  .leftside{
+    display: none;
+  }
+  .search{
+    display: none;
+  }
+
+  .mainmenu{
+    display: none;
+  }
+
+  .hamburger-wrapper{
+    display: block;
+  }
+
+  .g20logo > img {
+    width: 70px
+  }
+
+  .iitrlogo > img{
+    width: 200px;
+  }
+  .d{
+    height: 100%;
+    display: none;
+}
+.menuwrapper{
+    width: 35%;
+    min-height: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: var(--options-color);
+  }
+
+
+
+.dd{
+    display: block;
+    font-size: 15px;
+    line-height: 1.2rem;
+    letter-spacing: 0.02rem;
+    position: absolute;
+}
+.side-menu-text{
+    padding-left: 0.55rem;
+    margin-top: 0.5rem;
+    font-family: var(--font-lato);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: transform 330ms ease-in-out;
+}
+.side-menu-text:hover{
+    color: rgba(0, 0, 0, 1);
+}
+.majorMenu{
+    display: flex;
+}
+.hamburger{
+    width: 40%;
+}
+.hamburger-wrapper{
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.menupart{
+  display: none;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 50%;
+  gap: 0.75rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s ease 0s;
+}
+.hamburger-item{
+  padding: 0.35rem;
+  cursor: pointer;
+}
+.hamburger-text{
+  font-family: var(--font-lato);
+  line-height: 1rem;
+  letter-spacing: 0.02rem;
+}
+.hamburger-text:hover{
+  font-weight: 800;
+}
+}
