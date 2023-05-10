@@ -112,7 +112,11 @@ justify-content: space-between;
   flex-direction: column;
 justify-content: space-evenly;
 }
-
+.hamburger-navbar-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 .upperpart1{
   cursor: pointer;
 }
